@@ -1,0 +1,51 @@
+# Obter a lista de usuários
+GET http://localhost:3000/api/agendamento
+Content-Type: application/json
+###
+
+# Inserir novo usuário
+POST http://localhost:3000/api/agendamento
+Content-Type: application/json
+
+{
+ "descricao": "11as123d222",
+ "data": "2021-01-25T17:32:25.000Z",
+  "status": "Concluido",
+ "usuario" : "625f54629c8371e4b4f75ffd",
+  "maquina" : "625f4cf7397d2e40cc315f5e"
+}
+
+###
+# Alterar usuário
+PUT http://localhost:3000/api/requisicao
+Content-Type: application/json
+
+{
+ "_id": "623a564f28f3d465d3c9150a",
+ "nome": "Jaqson alterado",
+ "email": "jaqson@teste.com",
+ "celular": "54 6543 2423"
+}
+###
+# Excluir um usuário
+DELETE http://localhost:3000/api/requisicao/623a6c80da76fef61eae1574
+Content-Type: application/json
+###
+# Obter pelo id de usuário
+GET http://localhost:3000/api/requisicao/623a566628f3d465d3c9150c
+Content-Type: application/json
+###
+# Obter usuários filtrando
+GET http://localhost:3000/api/requisicao/filtro/fulano
+Content-Type: application/json
+###
+
+
+
+
+
+
+
+
+
+

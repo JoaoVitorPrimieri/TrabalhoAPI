@@ -1,0 +1,39 @@
+# Obter a lista de usuários
+GET http://localhost:3000/api/usuario
+Content-Type: application/json
+###
+
+# Inserir novo usuário
+POST http://localhost:3000/api/usuario
+Content-Type: application/json
+
+{
+ "nome": "João Vitor", "sobrenome": "paludo",
+ "cpf":"123123",
+  "senha": "123"
+
+}
+
+###
+# Alterar usuário
+PUT http://localhost:3000/api/usuario
+Content-Type: application/json
+
+{
+ "_id": "625f4a86d8b630cd7b8678e7",
+ "nome": "Jaqson alterado",
+ "sobrenome": "primieri"
+}
+###
+# Excluir um usuário
+DELETE http://localhost:3000/api/usuario/625f4a86d8b630cd7b8678e7
+Content-Type: application/json
+###
+# Obter pelo id de usuário
+GET http://localhost:3000/api/usuario/625f4a86d8b630cd7b8678e7
+Content-Type: application/json
+###
+# Obter usuários filtrando
+GET http://localhost:3000/api/usuario/filtro/jacson
+Content-Type: application/json
+###

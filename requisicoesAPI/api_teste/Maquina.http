@@ -1,0 +1,39 @@
+# Obter a lista de usuários
+GET http://localhost:3000/api/maquina
+Content-Type: application/json
+###
+
+# Inserir novo usuário
+POST http://localhost:3000/api/maquina
+Content-Type: application/json
+
+{
+ "modelo": "1", "marca": "Valtra",
+  "tipoCombustivel": "comun",
+  "numeroChassi": "1234"
+}
+
+###
+# Alterar usuário
+PUT http://localhost:3000/api/maquina
+Content-Type: application/json
+
+{
+ "_id": "625f4cf7397d2e40cc315f5e",
+ "modelo": "4", "marca": "Valtra",
+  "tipoCombustivel": "diesel",
+  "numeroChassi": "12345"
+}
+###
+# Excluir um usuário
+DELETE http://localhost:3000/api/maquina/623a564f28f3d465d3c9150a
+Content-Type: application/json
+###
+# Obter pelo id de usuário
+GET http://localhost:3000/api/maquina/623a566628f3d465d3c9150c
+Content-Type: application/json
+###
+# Obter usuários filtrando
+GET http://localhost:3000/api/maquina/filtro/fulano
+Content-Type: application/json
+###
