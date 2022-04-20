@@ -1,14 +1,14 @@
-# Obter a lista de usuários
+# Obter a lista de agendamento
 GET http://localhost:3000/api/agendamento
 Content-Type: application/json
 ###
 
-# Inserir novo usuário
+# Inserir novo agendamento
 POST http://localhost:3000/api/agendamento
 Content-Type: application/json
 
 {
- "descricao": "11as123d222",
+ "descricao": "teste",
  "data": "2021-01-25T17:32:25.000Z",
   "status": "Concluido",
  "usuario" : "625f54629c8371e4b4f75ffd",
@@ -16,8 +16,8 @@ Content-Type: application/json
 }
 
 ###
-# Alterar usuário
-PUT http://localhost:3000/api/requisicao
+# Alterar agendamento
+PUT http://localhost:3000/api/agendamento
 Content-Type: application/json
 
 {
@@ -25,18 +25,21 @@ Content-Type: application/json
  "nome": "Jaqson alterado",
  "email": "jaqson@teste.com",
  "celular": "54 6543 2423"
+
 }
 ###
-# Excluir um usuário
-DELETE http://localhost:3000/api/requisicao/623a6c80da76fef61eae1574
+
+# Excluir um agendamento
+DELETE http://localhost:3000/api/agendamento/625f54979c8371e4b4f76006
+
 Content-Type: application/json
 ###
-# Obter pelo id de usuário
-GET http://localhost:3000/api/requisicao/623a566628f3d465d3c9150c
+# Obter pelo id de agendamento
+GET http://localhost:3000/api/agendamento/623a566628f3d465d3c9150c
 Content-Type: application/json
 ###
-# Obter usuários filtrando
-GET http://localhost:3000/api/requisicao/filtro/fulano
+# Obter agendamento filtrando
+GET http://localhost:3000/api/agendamento/filtro/fulano
 Content-Type: application/json
 ###
 
